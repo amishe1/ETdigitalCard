@@ -2,8 +2,13 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets"
-public_folder: "/assets"
+publish_mode: editorial_workflow
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "https://etdigitalcard.netlify.app"
+display_url: "https://etdigitalcard.netlify.app"
+logo_url: "https://etdigitalcard.netlify.app/assets/logo.png"
 
 collections:
   - name: "site"
@@ -39,4 +44,7 @@ collections:
         fields:
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
-          - { label: "Gallery", name: "gallery", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            field: { label: "Image", name: "image", widget: "image" }
