@@ -1,0 +1,23 @@
+{
+  "name": "Aymen Solutions – Official Digital Hub",
+  "short_name": "ETdigitalCard",
+  "description": "Empowering business through digital innovation.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F7F3E9",
+  "theme_color": "#C8A045",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

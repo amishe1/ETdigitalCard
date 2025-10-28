@@ -1,0 +1,31 @@
+# ────────────────────────────────
+# Aymen Solutions – ETdigitalCard v1.0 (Popl Edition)
+# Netlify Configuration File
+# Handles: Forms, Admin, and Redirects
+# ────────────────────────────────
+
+[build]
+  publish = "."
+  command = ""
+
+# Enable Netlify Forms (for your contact section)
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+# Force HTTPS + redirect /admin to the dashboard
+[[redirects]]
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301
+
+# Offline fallback (PWA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

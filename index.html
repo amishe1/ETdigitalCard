@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aymen Solutions – Official Digital Hub</title>
+  <meta name="description" content="Empowering business through digital innovation.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#F7F3E9">
+</head>
+<body>
+  <main id="app">
+    <header class="hero">
+      <div class="avatar-wrap">
+        <img src="assets/profile.jpg" alt="Profile" class="avatar">
+        <img src="assets/logo.png" alt="Logo" class="badge">
+      </div>
+      <h1 class="name">Aymen Seid</h1>
+      <p class="title">Entrepreneur</p>
+      <p class="org">Aymen Solutions</p>
+      <a href="assets/aymen.vcf" download class="btn-primary">Save Contact</a>
+    </header>
+
+    <div class="search-wrap">
+      <input type="text" id="search" placeholder="Search links..." />
+      <button id="theme-toggle">🌙</button>
+    </div>
+
+    <section class="links-grid" id="links">
+      <!-- Buttons will load dynamically via CMS -->
+      <p class="placeholder">Add your links via /admin panel</p>
+    </section>
+
+    <section class="qr-section">
+      <canvas id="qrcode"></canvas>
+      <p class="scan-label">SCAN ME</p>
+    </section>
+
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </section>
+
+    <section class="share-section">
+      <button id="shareBtn" class="btn-gold">Share This Card</button>
+      <div id="shareMenu" class="hidden">
+        <a id="shareWhatsApp" href="#">WhatsApp</a>
+        <a id="shareTelegram" href="#">Telegram</a>
+        <a id="shareEmail" href="#">Email</a>
+        <button id="copyLink">Copy Link</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Created by <strong>Aymen Solutions</strong></p>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
