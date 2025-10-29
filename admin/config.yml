@@ -24,13 +24,13 @@ collections:
           - { label: "Profile Image", name: "profile", widget: "image" }
           - { label: "Logo", name: "logo", widget: "image" }
 
-  - name: "links"
+  -   - name: "links"
     label: "Social Links"
     folder: "content/links"
     create: true
-    slug: "{{slug}}"
     extension: "json"
     format: "json"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "URL", name: "url", widget: "string" }
@@ -50,3 +50,4 @@ collections:
             name: "gallery"
             widget: "list"
             field: { label: "Image", name: "image", widget: "image" }
+
