@@ -2,8 +2,6 @@ backend:
   name: git-gateway
   branch: main
 
-local_backend: true
-
 publish_mode: editorial_workflow
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
@@ -31,10 +29,12 @@ collections:
     folder: "content/links"
     create: true
     slug: "{{slug}}"
+    extension: "json"
+    format: "json"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "URL", name: "url", widget: "string" }
-      - { label: "Icon", name: "icon", widget: "image", default: "Upload" }
+      - { label: "Icon", name: "icon", widget: "image" }
       - { label: "Visible", name: "visible", widget: "boolean", default: true }
 
   - name: "about"
@@ -50,4 +50,3 @@ collections:
             name: "gallery"
             widget: "list"
             field: { label: "Image", name: "image", widget: "image" }
-
