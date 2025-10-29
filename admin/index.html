@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>ETdigitalCard Admin</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <style>
-    body {
-      font-family: Inter, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #F7F3E9;
-      color: #111;
-    }
-    h1 {
-      color: #C8A045;
-      font-size: 1.8rem;
-    }
-  </style>
-</head>
-<body>
-  <div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ETdigitalCard Admin Login</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        background: #fff8ef;
+        color: #7a5b35;
+        margin: 0;
+        padding-top: 120px;
+      }
+      h1 {
+        font-size: 22px;
+        letter-spacing: 0.5px;
+      }
+      p {
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
     <h1>ETdigitalCard Admin Login</h1>
     <p>Loading CMS...</p>
-  </div>
-  <script src="https://unpkg.com/netlify-cms-app@latest/dist/netlify-cms.js"></script>
-</body>
+
+    <!-- FIXED: Correct CDN link -->
+    <script src="https://unpkg.com/netlify-cms-app@^2.15.67/dist/netlify-cms.js"></script>
+
+    <!-- Ensure Netlify Identity Widget loads -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </body>
 </html>
